@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.13.0" name="Untitled" type="report">
+    <options>
+        <encoding>utf8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>15</topmargin>
+        <bottommargin>15</bottommargin>
+        <leftmargin>20</leftmargin>
+        <rightmargin>20</rightmargin>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <fontname>Arial</fontname>
+        <fontsize>10</fontsize>
+        <fontstyle></fontstyle>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+    </options>
+    <datasources>
+        <datasource id="sl0" allowEmpty="true" type="list" openRole="begin" source="static" columnDelimiter="tab" listID="sl0"></datasource>
+    </datasources>
+    <variables/>
+    <pageheader id="phead" height="37.571">
+        <rectangle id="5ZY4H" zValue="0" posX="0.000" posY="4.762" width="166.688" height="7.938" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#cecece"/>
+        <label id="SUIYK" zValue="1" posX="1.587" posY="4.762" width="118.533" height="7.938" fontName="Arial" fontSize="18" fontWeight="bold" fontItalic="true" forecolor="#0055ff">QStringList datasource demonstration</label>
+        <line id="HTPFP" zValue="2" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="0.000" fromY="14.552" toX="166.688" toY="14.552"/>
+        <line id="N7Q30" zValue="3" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="0.000" fromY="20.902" toX="166.688" toY="20.902"/>
+        <label id="ROE94" zValue="4" posX="1.587" posY="16.140" width="9.525" height="5.027" fontName="Arial" fontSize="10" fontItalic="true">ID.</label>
+        <label id="YXWQN" zValue="5" posX="19.315" posY="16.140" width="18.785" height="5.027" fontName="Arial" fontSize="10" fontItalic="true">Name</label>
+        <label id="BIBIX" zValue="6" posX="64.029" posY="16.140" width="18.785" height="5.027" fontName="Arial" fontSize="10" fontItalic="true">Address</label>
+        <label id="4ZJ7U" zValue="7" posX="125.148" posY="16.140" width="11.112" height="5.027" fontName="Arial" fontSize="10" fontItalic="true">Valid</label>
+        <label id="BF2LX" zValue="8" posX="144.198" posY="16.140" width="27.252" height="5.027" fontName="Arial" fontSize="10" fontItalic="true" forecolor="#ff0000">Date of order</label>
+    </pageheader>
+    <pagefooter id="pfoot" height="70.644">
+        <label id="KL7TS" zValue="0" posX="0.000" posY="3.175" width="33.602" height="6.350" fontName="Arial" fontSize="10">Page footer</label>
+        <line id="NWAXL" zValue="1" lineColor="#000000" lineStyle="dashdot" lineWidth="0.100" fromX="0.000" fromY="3.175" toX="166.688" toY="3.175"/>
+        <field id="HP2TC" typeId="131074" zValue="2" posX="100.012" posY="17.462" width="31.750" height="4.762" resource="param" fontName="Arial" fontSize="10" alignment="1" type="txt" ftype="par">param1</field>
+    </pagefooter>
+    <details>
+        <detail id="Detail1" height="44.185" datasource="sl0">
+            <items>
+                <field id="7BLPM" zValue="0" posX="0.000" posY="0.000" width="17.727" height="5.027" resource="datasource" fontName="Arial" fontSize="10" type="num" ftype="ds" formatting="true" numwidth="0" format="f" precision="0" localized="true">0</field>
+                <field id="4BE60" zValue="1" posX="64.029" posY="0.000" width="59.267" height="5.027" resource="datasource" fontName="Arial" fontSize="10" type="txt" ftype="ds">2</field>
+                <field id="A4E44" zValue="2" posX="19.315" posY="0.000" width="43.392" height="5.027" resource="datasource" fontName="Arial" fontSize="10" fontWeight="bold" type="txt" ftype="ds">1</field>
+                <field id="E9EXY" zValue="3" posX="125.148" posY="0.000" width="14.552" height="5.027" resource="datasource" fontName="Arial" fontSize="10" type="bool" ftype="ds">3</field>
+                <field id="EUXLK" zValue="4" posX="144.198" posY="0.000" width="22.490" height="5.027" resource="datasource" fontName="Arial" fontSize="10" forecolor="#aa0000" type="txt" ftype="ds">4</field>
+            </items>
+        </detail>
+    </details>
+</NCReport>

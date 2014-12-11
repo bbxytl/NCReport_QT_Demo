@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.13.0" name="Untitled" type="report">
+    <options>
+        <encoding>utf8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>15</topmargin>
+        <bottommargin>15</bottommargin>
+        <leftmargin>20</leftmargin>
+        <rightmargin>20</rightmargin>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <fontname>Arial</fontname>
+        <fontsize>10</fontsize>
+        <fontstyle></fontstyle>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+    </options>
+    <datasources>
+        <datasource id="ds" allowEmpty="true" type="txt" openRole="begin" source="parameter" columnDelimiter="tab" encoding="UTF-8">data1</datasource>
+    </datasources>
+    <variables/>
+    <pageheader id="PH" height="22.984">
+        <rectangle id="9N0A0" zValue="0" posX="0.000" posY="4.762" width="166.688" height="7.938" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#aaffff"/>
+        <label id="WYWZS" zValue="1" posX="1.587" posY="4.762" width="118.533" height="7.938" fontName="Arial" fontSize="18" fontWeight="bold" fontItalic="true" forecolor="#0055ff">QString as parameter datasource demo</label>
+        <line id="O32JT" zValue="2" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="0.000" fromY="14.552" toX="166.688" toY="14.552"/>
+        <line id="AQUXH" zValue="3" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="0.000" fromY="20.902" toX="166.688" toY="20.902"/>
+        <label id="9BVUO" zValue="4" posX="1.587" posY="16.140" width="9.525" height="5.027" fontName="Arial" fontSize="10" fontItalic="true" alignment="34">ID.</label>
+        <label id="U92TU" zValue="5" posX="19.315" posY="16.140" width="18.785" height="5.027" fontName="Arial" fontSize="10" fontItalic="true">Name</label>
+        <label id="HHWS6" zValue="6" posX="142.610" posY="16.140" width="18.785" height="5.027" fontName="Arial" fontSize="10" fontItalic="true" alignment="34">Price</label>
+    </pageheader>
+    <pagefooter id="PF" height="61.648">
+        <label id="XTLLO" zValue="0" posX="0.000" posY="3.175" width="33.602" height="6.350" fontName="Arial" fontSize="10">Page footer</label>
+        <line id="A6HOZ" zValue="1" lineColor="#000000" lineStyle="dashdot" lineWidth="0.100" fromX="0.000" fromY="3.175" toX="166.688" toY="3.175"/>
+    </pagefooter>
+    <details>
+        <detail id="Detail1" height="47.625" datasource="ds">
+            <items>
+                <field id="Z3MZS" zValue="0" posX="1.587" posY="1.587" width="11.112" height="5.027" resource="datasource" fontName="Arial" fontSize="10" alignment="34" type="num" ftype="ds" formatting="true" numwidth="0" format="f" precision="0" localized="true">0</field>
+                <field id="QYLGY" zValue="1" posX="139.435" posY="0.000" width="22.490" height="5.027" resource="datasource" fontName="Arial" fontSize="10" fontWeight="bold" fontItalic="true" alignment="34" type="num" ftype="ds" formatting="true" numwidth="0" format="f" precision="2" localized="false">3</field>
+                <field id="A3N7X" zValue="2" posX="19.315" posY="0.000" width="118.533" height="5.027" resource="datasource" fontName="Arial" fontSize="10" type="txt" ftype="ds">1</field>
+            </items>
+        </detail>
+    </details>
+</NCReport>
