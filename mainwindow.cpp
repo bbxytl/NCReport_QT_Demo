@@ -121,7 +121,7 @@ void MainWindow::openDatabase()
         qdb = QSqlDatabase::addDatabase("QODBC", "db1");
         QString test = QString("DRIVER={Microsoft Access Driver (*.mdb)};\
                                FIL={MS Access};\
-                               DBQ=E:/TianLong/Projects/reports/ER_DEK_21.mdb"
+                               DBQ=E:/TianLong/Projects/reports/ER_DEK_22.mdb"
                               );
         qdb.setDatabaseName(test);
         qdb.open();

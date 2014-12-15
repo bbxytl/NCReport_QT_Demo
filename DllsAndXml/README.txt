@@ -1,1 +1,3 @@
 将此文件夹内文件放入到Build后的文件夹中！
+
+压缩包内文件为头文件include以及lib库文件lib、dll、a、
