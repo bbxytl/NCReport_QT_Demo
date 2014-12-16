@@ -12,7 +12,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->radioButton_QSList->setChecked(true);
     type=SList;
     setTypeOpt();
-
 }
 
 MainWindow::~MainWindow()
