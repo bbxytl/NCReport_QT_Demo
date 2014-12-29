@@ -15,6 +15,6 @@
 #include "ncreportdatasource.h"
 #include <QtCore/private/qfsfileengine_p.h>
 
-//#define dbg qDebug()
+//#define DBG qDebug()
 
 #endif // AHEAD_H
