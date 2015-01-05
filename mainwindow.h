@@ -5,6 +5,7 @@
 #include "AHead.h"
 
 #include "testdatasource.h"
+#include "testvarint.h"
 
 enum REPORTTYPE{DataBase,StrinG,SList,CustomData};
 static unsigned int gl_count=0;
@@ -65,6 +66,7 @@ private:
     QString sdata;      //数据源为QString
     QStringList list;   //数据源为QStringList
     TestDataSource *ds ;//数据源为CustomData
+    TestVarint *dvs;
 
 };
 

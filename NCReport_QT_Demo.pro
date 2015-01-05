@@ -14,15 +14,17 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp\
-    testdatasource.cpp
+    testdatasource.cpp \
+    testvarint.cpp
 
 HEADERS  += mainwindow.h \
     AHead.h\
-    testdatasource.h
+    testdatasource.h\
+    testvarint.h
 
 FORMS    += mainwindow.ui
 
-#添加库文件路径
+#添加库文件路�?
 LIBS += D:/API/NCReport/2.13.0.MinGW.Qt5.3.2.eval/lib/libNCReportDebug2.a
 
 #添加包含路径

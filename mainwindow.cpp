@@ -9,8 +9,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     report =new NCReport();
     qdb=QSqlDatabase();
-    ui->radioButton_QSList->setChecked(true);
-    type=SList;
+    ui->radioButton_MyDS->setChecked(true);
+    type=CustomData;
     setTypeOpt();
 }
 
@@ -21,7 +21,9 @@ MainWindow::~MainWindow()
     }
     list.clear();
     delete report;
+
     delete ds;
+    delete dvs;
     delete ui;
 }
 
@@ -169,6 +171,7 @@ void MainWindow::setStringList()
 
 void MainWindow::setCustomData()
 {
+#if 0
     ds= new TestDataSource();
     ds->setID("cds0");
 
@@ -197,6 +200,36 @@ void MainWindow::setCustomData()
     ds->addData( d3 );
 
     report->addCustomDataSource( ds );
+#endif
+
+#if 1
+    dvs = new TestVarint();
+    dvs->setID("cds0");
+    QStringList cols;
+    cols<<"id"<<"name"<<"address"<<"valid"<<"date"<<"test";
+    dvs->addCols(cols);
+    QList<DATA_2> datas;
+    QList<QVariant> lsv;
+    lsv<<157<<"Julius"<<"Coronado, CA"
+         <<false<<QDate(2008,01,12)<<"Test";
+    datas.append(lsv);
+
+    lsv.clear();
+    lsv<<127<<"VILLAGE, CA"<<"Peter"
+         <<"Test"<<QDate(2011,06,10)<<true;
+    datas.append(lsv);
+
+    lsv.clear();
+    lsv<<157<<"Alexander"<<"San, CA"
+         <<false<<QDate(2018,11,23);
+    datas.append(lsv);
+
+    dvs->addData(datas);
+
+    report->addCustomDataSource( dvs );
+#endif
+    int i=0;
+
 }
 
 //数据显示部分
@@ -330,7 +363,7 @@ void MainWindow::listPDF()
 
 void MainWindow::customPreView()
 {
-    qDebug()<<"run the customPreView()--Begin";
+//    qDebug()<<"run the customPreView()--Begin";
     QString templateFile="customdatasource_demo.xml";
 
     report->reset();
@@ -340,6 +373,7 @@ void MainWindow::customPreView()
     report->setReportSource( NCReportSource::File );
     report->setReportFile(templateFile);//模板文件
     report->runReportToPreview();
+    
     if(report->hasError()){
         qDebug()<<"Error: customPreView";
         qDebug()<<report->lastErrorMsg();
@@ -349,14 +383,15 @@ void MainWindow::customPreView()
         pv->setWindowModality(Qt::ApplicationModal);
         pv->setAttribute(Qt::WA_DeleteOnClose);
         pv->show();
+
     }
 
-    qDebug()<<"run the customPreView()--End";
+//    qDebug()<<"run the customPreView()--End";
 }
 
 void MainWindow::customPDF()
 {
-    qDebug()<<"run the customPDF()--Begin";
+//    qDebug()<<"run the customPDF()--Begin";
     QString templateFile="customdatasource_demo.xml";
     QString outFile=QString("Custom_report_%1.pdf").arg(gl_count++);
 
@@ -366,9 +401,9 @@ void MainWindow::customPDF()
     report->setReportSource( NCReportSource::File );
     report->setReportFile(templateFile);//模板文件
 
-    qDebug()<<"setCustomData   1";
+//    qDebug()<<"setCustomData   1";
     report->runReportToPdf(outFile);
-    qDebug()<<"setCustomData   2";
+//    qDebug()<<"setCustomData   2";
 
-    qDebug()<<"run the customPDF()--End";
+//    qDebug()<<"run the customPDF()--End";
 }
